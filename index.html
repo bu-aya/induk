@@ -48,7 +48,7 @@
     <script type="text/babel">
         const { useState, useEffect, useMemo, useRef } = React;
 
-        const initialClasses = ["Kelas 1A", "Kelas 1B", "Kelas 2A", "Kelas 2B", "Kelas 3A", "Kelas 3B, "Kelas 4A", "Kelas 4B", "Kelas 5A", "Kelas 5B", "Kelas 6A", Kelas 6B];
+        const initialClasses = ["Kelas 1A", "Kelas 1B", "Kelas 2A", "Kelas 3A", "Kelas 4A", "Kelas 5A", "Kelas 6A"];
         const initialYears = ["2019/2020", "2020/2021", "2021/2022", "2022/2023", "2023/2024", "2024/2025", "2025/2026"];
         
         const initialSettings = {
@@ -59,18 +59,12 @@
             currentYear: "2025/2026",
             reportPrintDate: "2026-06-20",
             teachers: { 
-                "Kelas 1A": "Eka Farida, S.Pd", 
-		"Kelas 1B": "Nuraeni, S.Pd",
-                "Kelas 2A": "Siti Nuraeni, S.Pd.I",
-		"Kelas 2B": "Zulfa, S.Pd",
-                "Kelas 3A": "Hilma, S.Pd",
-		"Kelas 3B": "Isma Muna, S.Pd",
-                "Kelas 4A": "Anita Syamsiyah, S.Hum",
-                "Kelas 4B": "Isna, S.Pd",
-                "Kelas 5A": "Kartika Dewi, S.Pd" ,
-		"Kelas 5B": "Syamsul Kamil, S.Pd",
-                "Kelas 6A": "Winda Wardiani, S.Pd",
-                "Kelas 6B": "Khurin'in, S.Si"
+                "Kelas 1A": "Siti Aminah, S.Pd", 
+                "Kelas 2A": "Budi Santoso, S.Pd",
+                "Kelas 3A": "Lilis Herlina, S.Pd",
+                "Kelas 4A": "Dadang Suherman, S.Pd",
+                "Kelas 5A": "Evi Sofia, S.Pd",
+                "Kelas 6A": "M. Syarifuddin, S.Pd.I" 
             }
         };
 
@@ -792,7 +786,7 @@
                                             <span className="text-slate-400 text-xs font-semibold uppercase tracking-wider">Siswa Aktif</span>
                                             <div className="flex items-baseline gap-1 mt-2">
                                                 <span className="text-2xl font-bold text-emerald-600">{stats.totalActive}</span>
-                                                <span className="text-[10px] text-slate-400">Siswa</span>
+                                                <span className="text-[10px] text-slate-400">Jiwa</span>
                                             </div>
                                         </div>
                                         <div className="bg-white p-4 rounded-xl shadow-sm border flex flex-col justify-between">
@@ -914,8 +908,6 @@
                                                         <th className="py-3 px-4">Siswa</th>
                                                         <th className="py-3 px-4">NIS / NISN</th>
                                                         <th className="py-3 px-4">Tempat, Tgl Lahir</th>
-							<th className="py-3 px-4">Nama Ayah</th>
-							<th className="py-3 px-4">Nama Ibu</th>
                                                         <th className="py-3 px-4">Kelas & TA</th>
                                                         <th className="py-3 px-4">Status</th>
                                                         <th className="py-3 px-4">Info Khusus</th>
@@ -1547,11 +1539,9 @@
                                                 <div className="text-center border-b-4 border-double border-slate-900 pb-3 mb-6">
                                                     <h1 className="text-lg font-bold uppercase tracking-wide">YAYASAN ANNIHAYAH KARAWANG</h1>
                                                     <h2 className="text-xl font-extrabold text-emerald-800 tracking-wider">SDIT ANNIHAYAH</h2>
-                                                    <p className="text-[9px] text-slate-500 italic">"SK Ijin Operasional :503/4853/5/IPSS/X/DPMPTSP/2019 NPSN : 69993044"</p>
-                                                    <p className="text-xs font-semibold text-slate-600">"Dusun Krajan Satu Desa Sukamerta Kecamatan Rawamerta - Karawang"
-						    <p className="text-xs font-semibold text-slate-600">"E-mail : annihayah.sdit@gmail.com"
-
-</p>
+                                                    <p className="text-[9px] text-slate-500 italic">SK Ijan Operasional : 503/4853/5/IPSS/X/DPMPTSP/2019 NPSN : 69993044</p>
+                                                    <p className="text-xs font-semibold text-slate-600">Dusun Krajan Satu Desa Sukamerta Kecamatan Rawamerta - Karawang</p>
+                                                    <p className="text-xs font-semibold text-slate-600">E-Mail : annihayah.sdit@gmail.com</p>
                                                 </div>
 
                                                 <div className="text-center mb-5">
@@ -1724,8 +1714,9 @@
                                                 <div className="text-center border-b-4 border-double border-slate-900 pb-3 mb-6">
                                                     <h1 className="text-lg font-bold uppercase tracking-wide">YAYASAN ANNIHAYAH KARAWANG</h1>
                                                     <h2 className="text-xl font-extrabold text-emerald-800 tracking-wider">SDIT ANNIHAYAH</h2>
-                                                    <p className="text-[9px] text-slate-500 italic">Izin Operasional No: 421.1/658-Bid.SD/2016 • NSS: 102021203001 • NISN: 69947990</p>
-                                                    <p className="text-xs font-semibold text-slate-600">Alamat: Jl. Syekh Quro, Plawad, Karawang Timur, Karawang, Jawa Barat 41314</p>
+                                                    <p className="text-[9px] text-slate-500 italic">SK Ijan Operasional : 503/4853/5/IPSS/X/DPMPTSP/2019 NPSN : 69993044</p>
+                                                    <p className="text-xs font-semibold text-slate-600">Dusun Krajan Satu Desa Sukamerta Kecamatan Rawamerta - Karawang</p>
+                                                    <p className="text-xs font-semibold text-slate-600">E-Mail : annihayah.sdit@gmail.com</p>
                                                 </div>
 
                                                 <div className="text-center mb-5">
@@ -2037,15 +2028,6 @@
                                             <input type="date" value={studentForm.dob} onChange={(e) => setStudentForm({ ...studentForm, dob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
                                         </div>
                                         <div>
-					    <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Nama Ayah</label>
-                                            <input type="text" placeholder="Contoh: Zahran" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
-                                        </div>
-                                        <div>
-					    <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Nama Ibu</label>
-                                            <input type="text" placeholder="Contoh: Yaya" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
-                                        </div>
-                                        <div>
-							
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Jenis Kelamin</label>
                                             <select value={studentForm.gender} onChange={(e) => setStudentForm({ ...studentForm, gender: e.target.value })} className="w-full px-3 py-2 border rounded-lg outline-none bg-white">
                                                 <option value="Laki-laki">Laki-laki</option>
